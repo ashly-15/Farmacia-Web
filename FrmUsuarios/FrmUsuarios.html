@@ -6,6 +6,38 @@
     <title>Registro de Usuarios</title>
 </head>
 <body>
-    <div class="container"></div>
+    <header>
+        <h2>Nuevo Usuario</h2>
+    </header>
+    <div class="container">
+        <form action="RegistrarUsuario">
+            <section>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="txtnombre"><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="txttelefono"><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="txtemail"><br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="txtdireccion"><br>
+                
+            </section>
+            <section>
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="txtcedula"><br>
+
+                <label for="cedula">Género:</label>
+                <select name="genero" id="cbgenero">
+                    <option></option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>           
+
+            </section>
+        </form>
+    </div>
 </body>
 </html>
