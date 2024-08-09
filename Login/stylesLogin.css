@@ -5,12 +5,14 @@ body{
 }
 
 .container{
-    background-color: white;
-    border-radius: 20px;
-    margin: 50px 30%;
-    max-width: 50%;
-    padding: 30px;
     display: flex;
+    background-color: white;
+    border-radius: 5px;
+    width: 20%;  
+    justify-content: center;
+    padding: 30px;
+    margin: auto; 
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     gap: 10px; 
@@ -20,10 +22,7 @@ h2 {
     color: rgb(0, 126, 167);
     font-size: 30px;
     margin: 0px;
-}
-
-i {
-    font-size: 30px;
+    text-align: center;
 }
 
 form {
@@ -40,18 +39,42 @@ input[type="text"] {
     margin: 10px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #92c5f6;
+    border-bottom: 1px solid #5e5e5e;
     outline: none;
     text-align: center;
-   /* border-radius: 5px;
-    border: 1px solid #ccc;*/
+}
 
+.Credenciales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.group i {
+    position: absolute;
+    top: 20px;
+    font-size: 20px; 
+    padding: 10px ;
+}
+
+.group input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
 }
 
 #imgLogo{
     width: 200px;
     height: 200px;
-    margin: 0;
+    margin: -10px;
 }
 
 #btnIniciarSesion{
@@ -65,11 +88,12 @@ input[type="text"] {
     border-style: none;
 }
 
-#iPassword{
-    margin: 8px;
+#btnIniciarSesion:hover{
+    background-color: gray;
 }
 
 .Botones{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -79,13 +103,35 @@ input[type="text"] {
 a {
     text-decoration: none;
     cursor: pointer;
-    
+    position: relative;
+    color: #5e5e5e;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #5e5e5e;
+    /*Animacion de derecha a izquierda*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 @media(max-width: 600px){
     .container{
-        margin: 10px;
         display: flex;
+        width: 50%;
+        padding: 40px;
         flex-direction: column;
         align-items: center;
         gap: 10px; 
