@@ -1,0 +1,24 @@
+body{
+    /* background-color: lightblue; */
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: #fff; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; 
+}
+
+.btn i {
+    color: #003249;
+}
+
+.btn:hover {
+    background-color: #45a049; 
+}

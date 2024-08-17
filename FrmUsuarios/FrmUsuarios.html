@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90748f9190.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesUsuarios.css">
     <title>Registro de Usuarios</title>
 </head>
 <body>
@@ -29,13 +31,45 @@
                 <label for="cedula">Cédula:</label>
                 <input type="text" id="txtcedula"><br>
 
-                <label for="cedula">Género:</label>
+                <label for="genero">Género:</label>
                 <select name="genero" id="cbgenero">
                     <option></option>
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
-                </select>           
+                </select><br>
+                
+                <label for="cargo">Cargo:</label>
+                <select name="cargo" id="cbgenero">
+                    <option></option>
+                    <option value="Admin">1. Admin</option>
+                    <option value="Vendedor">2. Vendedor</option>
+                    <option value="Cajero">3. Cajero</option>
+                    <option value="Encargado de inventario">4. Encargado de inventario"</option>
+                </select><br>
 
+                <label for="nombreUsuario">Nombre de Usuario:</label>
+                <input type="text" id="txtuser"><br>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" id="txtcontraseña"><br>
+
+            </section>
+
+            <section id="botones">
+                <button>Nuevo</button>
+                <button>Guardar</button>
+                <button>Actualizar</button>
+                <button>Eliminar</button>
+                <button>Cacelar</button>
+                <button>Salir</button>
+            </section>
+
+            <section id="busqueda">
+                <label for="busqueda">Buscar por Nombre:</label>
+                <input type="text" id="txtbusqueda">
+                <button class="btn">
+                    <i class="fas fa-search" id="btnbusqueda"></i>
+                </button>
             </section>
         </form>
     </div>
