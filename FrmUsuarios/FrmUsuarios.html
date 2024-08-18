@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,49 +13,63 @@
     </header>
     <div class="container">
         <form action="RegistrarUsuario">
-            <section>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="txtnombre"><br>
+            <div class="cont">
+                <section class="columnA">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="txtnombre"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="txttelefono"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="txtemail"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="txtdireccion"><br>
+                    </div>   
 
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="txttelefono"><br>
+                </section>
+                <section class="columnB">
+                    <div class="form-group">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" id="txtcedula"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Género:</label>
+                        <select name="genero" id="cbgenero">
+                            <option></option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select><br>
+                    </div>
 
-                <label for="email">Email:</label>
-                <input type="text" id="txtemail"><br>
-
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="txtdireccion"><br>
-                
-            </section>
-            <section>
-                <label for="cedula">Cédula:</label>
-                <input type="text" id="txtcedula"><br>
-
-                <label for="genero">Género:</label>
-                <select name="genero" id="cbgenero">
-                    <option></option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select><br>
-                
-                <label for="cargo">Cargo:</label>
-                <select name="cargo" id="cbgenero">
-                    <option></option>
-                    <option value="Admin">1. Admin</option>
-                    <option value="Vendedor">2. Vendedor</option>
-                    <option value="Cajero">3. Cajero</option>
-                    <option value="Encargado de inventario">4. Encargado de inventario"</option>
-                </select><br>
-
-                <label for="nombreUsuario">Nombre de Usuario:</label>
-                <input type="text" id="txtuser"><br>
-
-                <label for="contraseña">Contraseña:</label>
-                <input type="text" id="txtcontraseña"><br>
-
-            </section>
-
-            <section id="botones">
+                    
+                    <div class="form-group">
+                        <label for="cargo">Cargo:</label>
+                        <select name="cargo" id="cbgenero">
+                            <option></option>
+                            <option value="Admin">1. Admin</option>
+                            <option value="Vendedor">2. Vendedor</option>
+                            <option value="Cajero">3. Cajero</option>
+                            <option value="Encargado de inventario">4. Encargado de inventario"</option>
+                        </select><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreUsuario">Nombre de Usuario:</label>
+                        <input type="text" id="txtuser"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="text" id="txtcontraseña"><br>
+                    </div>       
+                </section>    
+            </div>
+            
+            <section class="botones">
                 <button>Nuevo</button>
                 <button>Guardar</button>
                 <button>Actualizar</button>
@@ -64,12 +78,26 @@
                 <button>Salir</button>
             </section>
 
-            <section id="busqueda">
+            <section class="busqueda">
                 <label for="busqueda">Buscar por Nombre:</label>
                 <input type="text" id="txtbusqueda">
                 <button class="btn">
                     <i class="fas fa-search" id="btnbusqueda"></i>
                 </button>
+            </section>
+
+            <section class="table">
+                <table>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Cédula</th>
+                    <th>Télefono</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Género</th>
+                    <th>Usuario</th>
+                    <th>Cargo</th>
+                </table>
             </section>
         </form>
     </div>
